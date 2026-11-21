@@ -1,0 +1,181 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090909;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(135deg, #800000, #300000);
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #b8860b;
+}
+
+header h1 {
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* MENÚ */
+nav {
+    background: #171717;
+    height: 55px;
+    border-bottom: 1px solid #800000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+    line-height: 55px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+/* LIMPIAR FLOTANTES */
+.clearfix {
+    clear: both;
+}
+
+/* CONTENIDO PRINCIPAL */
+#content {
+    float: left;
+    width: 75%;
+    background: #111111;
+    min-height: 600px;
+    padding: 30px;
+}
+
+/* ARTÍCULOS */
+.article {
+    background: #1b1b1b;
+    border-left: 4px solid #800000;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 25px;
+    line-height: 1.7;
+    color: #dddddd;
+    transition: 0.3s;
+}
+
+.article:hover {
+    border-left-color: #d4af37;
+    transform: translateY(-3px);
+}
+
+.article h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.article p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* IMÁGENES */
+.article img {
+    display: block;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.article img:hover {
+    transform: scale(1.08);
+}
+
+/* BARRA LATERAL */
+aside {
+    float: left;
+    width: 25%;
+    background: linear-gradient(180deg, #420000, #151515);
+    color: white;
+    min-height: 600px;
+    padding: 25px;
+}
+
+aside h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+aside input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+aside input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #800000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside input[type="submit"]:hover {
+    background: #a00000;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #300000;
+    color: #cccccc;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 15px;
+    border-top: 2px solid #800000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #content,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
